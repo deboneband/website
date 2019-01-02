@@ -33,7 +33,7 @@
   </div>
   
   <!-- Header section -->
-  <div data-include="header"/>
+  <div insert="header"/>
   <!-- Header section end -->
                         
   <!-- Hero section -->
@@ -246,10 +246,10 @@
 
   <script>
     $(function(){
-      var includes = $('[data-include]');
-      jQuery.each(includes, function(){
-        var file = $(this).data('include') + '.html';
-        console.log($(this).data('include'));
+      var includes = $("div[insert]");
+      jQuery.each(includes, function() {
+        var file = $(this).attr('insert') + '.html';
+        console.log($(this).attr('insert'));
         $(this).load(file);
       });
     });
