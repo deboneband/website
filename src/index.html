@@ -31,10 +31,9 @@
   <div id="preloder">
     <div class="loader"></div>
   </div>
-
-  <div data-include="header"/>
   
   <!-- Header section -->
+  <div data-include="header"/>
   <!-- Header section end -->
                         
   <!-- Hero section -->
@@ -249,7 +248,7 @@
     $(function(){
       var includes = $('[data-include]');
       jQuery.each(includes, function(){
-        var file = $(this).data('include');
+        var file = $(this).data('include') + '.html';
         console.log($(this).data('include'));
         $(this).load(file);
       });
