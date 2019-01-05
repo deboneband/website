@@ -28,9 +28,9 @@
 </head>
 <body>
   <!-- Page Preloder -->
-  <!-- <div id="preloder"> -->
-    <!-- <div class="loader"></div> -->
-  <!-- </div> -->
+  <div id="preloder">
+    <div class="loader"></div>
+  </div>
   
   <!-- Header section -->
   <header class="header-section">
@@ -45,21 +45,21 @@
         </div>
         <!-- Main Menu -->
         <ul class="main-menu">
-            <li id="home-tab"><a href="index.html">Home</a></li>
-            <li id="about-tab"><a href="about.html">About</a></li>
-            <li id="music-tab"><a href="charts.html">Music</a></li>
-            <li id="media-tab"><a href="dj.html">Media</a></li>
-            <li id="tour-tab"><a href="blog.html">Tour</a></li>
-            <li id="contact-tab"><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="charts.html">Music</a></li>
+            <li><a href="dj.html">Media</a></li>
+            <li><a href="blog.html">Tour</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <!-- Social Links -->
         <div class="header-social-links">
-            <a href=""><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-soundcloud"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-google-plus"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-youtube-play"></i></a>
+            <a onclick="openUrl('https://www.instagram.com/deboneband/')" href=""><i class="fa fa-instagram"></i></a>
+            <a onclick="openUrl('https://www.facebook.com/deboneband/')" href=""><i class="fa fa-facebook"></i></a>
+            <a onclick="openUrl('https://twitter.com/deboneband')" href=""><i class="fa fa-twitter"></i></a>
+            <a onclick="openUrl('https://www.youtube.com/channel/UCBi93zvQjKUw3Upotkzz7WQ')" href=""><i class="fa fa-youtube-play"></i></a>
+            <a onclick="openUrl('404.html')" href=""><i class="fa fa-spotify"></i></a>
+            <a onclick="openUrl('https://soundcloud.com/user-430375293')" href=""><i class="fa fa-soundcloud"></i></a>
         </div>
     </div>
   </header>
@@ -67,53 +67,24 @@
                         
   <!-- Hero section -->
   <section class="hero-section set-bg" data-setbg="img/bg.jpg">
-    <div class="locations d-none d-sm-block">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 col-sm-4 location">
-            <img src="img/logo-small.png" alt="">
-            <p>Berlin</p>
-          </div>
-          <div class="col-md-2 col-sm-4 location">
-            <img src="img/logo-small.png" alt="">
-            <p>Bucharest</p>
-          </div>
-          <div class="col-md-2 col-sm-4 location">
-            <img src="img/logo-small.png" alt="">
-            <p>London</p>
-          </div>
-          <div class="col-md-2 col-sm-4 location">
-            <img src="img/logo-small.png" alt="">
-            <p>Bucharest</p>
-          </div>
-          <div class="col-md-2 col-sm-4 location">
-            <img src="img/logo-small.png" alt="">
-            <p>Tel Aviv</p>
-          </div>
-          <div class="col-md-2 col-sm-4 location">
-            <img src="img/logo-small.png" alt="">
-            <p>Moscow</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="hero-slider owl-carousel">
       <div class="hs-item">
         <div class="container">
-          <span>UP NEXT</span>
-          <h2>DJ Khaled Exclusive Interview</h2>
+          <span>COMING SOON...</span>
+          <h2>This Is Not An Album</h2>
         </div>
       </div>
       <div class="hs-item">
         <div class="container">
-          <span>UP NEXT</span>
-          <h2>David Guetta Exclusive Interview</h2>
+          <span>NEXT SHOW</span>
+          <h2>25th January | Sala Bóveda, Barcelona</h2>
         </div>
       </div>
       <div class="hs-item">
         <div class="container">
-          <span>UP NEXT</span>
-          <h2>Dj snake Exclusive Track</h2>
+          <span>NEWS</span>
+          <h2>Brace yourself, merch is comming.</h2>
         </div>
       </div>
     </div>
@@ -125,18 +96,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="promo-box set-bg" data-setbg="img/promo/1.jpg">
-            <h2>Our DJ’s</h2>
+          <div class="promo-box set-bg" data-setbg="img/music.jpg">
+            <h2>Music</h2>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="promo-box set-bg" data-setbg="img/promo/2.jpg">
-            <h2>Live Streans</h2>
+          <div class="promo-box set-bg" data-setbg="img/stories.jpg">
+            <h2>Stories</h2>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="promo-box set-bg" data-setbg="img/promo/3.jpg">
-            <h2>Events</h2>
+          <div class="promo-box set-bg" data-setbg="img/tour.jpg">
+            <h2>Tour</h2>
           </div>
         </div>
       </div>
@@ -148,20 +119,15 @@
   <section class="latest-podcast-section spad">
     <div class="container">
       <div class="section-title text-center">
-        <h2>Latest Podcast</h2>  
+        <h2>Latest Media</h2>
       </div>
       <div class="new-project-player">
         <div class="row">
-          <div class="col-lg-4 albam-preview">
-            <img src="img/albam.jpg" alt="">
+          <div class="col-lg-4 albam-preview" onclick="openUrl('https://www.instagram.com/p/BsNtNXwnXrS/');">
+            <img src="img/last-instagram.jpg" alt="" >
           </div>
           <div class="col-lg-8">
-            <div class="track-name">Hernan Cataneo - Residence #376</div>
-            <div class="audio-wave">
-              <div id="audiowave"></div>
-            </div>
-            <div id="cliptime"></div>
-            <button id="play" class="site-btn" onclick="wavesurfer.playPause();">LISTEN LIVE</button>
+            <div class="track-name">January 25, Barcelona, Sala Bóveda. GET THE TICKETS <a href="https://entradium.com/entradas/doomsday-party">HERE</a>! 🤘🔥♥️</div>
           </div>
         </div>
       </div>
@@ -169,80 +135,64 @@
   </section>
   <!-- Latest Podcast section end -->
 
-  <!-- Charts section -->
-  <section class="charts-section">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Charts</h2>  
-      </div>
-    </div>
-    <div class="charts-warp set-bg" data-setbg="img/chart-bg.jpg">
-      <div class="container">
-        <img src="img/logo-big.png" alt="">
-      </div>
-    </div>
-  </section>
-  <!-- Charts section end -->
-
   <!-- Footer Top section -->
   <section class="footer-top-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-6 ft-widget">
+        <div class="col-lg-4 col-md-6 ft-widget">
           <div class="ft-title">
-            <h4>Locations</h4>
-          </div>
-          <ul>
-            <li><a href="">Berlin</a></li>
-            <li><a href="">Bucharest</a></li>
-            <li><a href="">London</a></li>
-            <li><a href="">Budapest</a></li>
-            <li><a href="">Tel Aviv</a></li>
-            <li><a href="">Moscow</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 ft-widget">
-          <div class="ft-title">
-            <h4>Top Shows</h4>
-          </div>
-          <ul class="order-list">
-            <li><a href=""><span>1</span>88,8 Weekly Chart</a></li>
-            <li><a href=""><span>2</span>Transitions - John Digweed</a></li>
-            <li><a href=""><span>3</span>Who’s On Top? with John Doe</a></li>
-            <li><a href=""><span>4</span>88,8 News</a></li>
-            <li><a href=""><span>5</span>Electronic Worriors</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 ft-widget">
-          <div class="ft-title">
-            <h4>Blog</h4>
+            <h4>Shows</h4>
           </div>
           <div class="ft-blog-widget">
             <div class="bw-item">
-              <div class="bw-thumb set-bg" data-setbg="img/blog/thumb/1.jpg"></div>
+              <div class="bw-thumb">
+                <img src="img/shows/thumb/001.jpg">
+              </div>
               <div class="bw-content">
-                <p>5 Things to know when you attend a music festival. </p>
-                <a href="#">Continue Reading</a>
+                <p>25th January | Sala Bóveda, Barcelona</p>
+                <a href="https://entradium.com/entradas/doomsday-party">Buy tickets</a>
               </div>
             </div>
             <div class="bw-item">
-              <div class="bw-thumb set-bg" data-setbg="img/blog/thumb/2.jpg"></div>
+              <p>... more shows cooming soon, stay tuned 🤘</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ft-widget">
+          <div class="ft-title">
+            <h4>Stories</h4>
+          </div>
+          <div class="ft-blog-widget">
+            <div class="bw-item">
+              <div class="bw-thumb">
+                <img src="img/stories/thumb/001.jpg">
+              </div>
               <div class="bw-content">
-                <p>5 Things to know when you attend a music festival. </p>
-                <a href="#">Continue Reading</a>
+                <p>This Is Not An Album: It's being recorded and will be released soon.</p>
+                <a href="404.html">Continue Reading</a>
+              </div>
+            </div>
+            <div class="bw-item">
+              <div class="bw-thumb">
+                <img src="img/stories/thumb/002.jpg">
+              </div>
+              <div class="bw-content">
+                <p>Get Debone's merch as soon as it comes out!</p>
+                <a href="404.html">Continue Reading</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 ft-widget">
+        <div class="col-lg-4 col-md-6 ft-widget">
           <div class="ft-title">
             <h4>Contact</h4>
           </div>
           <div class="ft-contact-widget">
-            <p><span>A:</span> 4111 Birch Street, Berlin</p>
-            <p><span>T:</span> 317-822-4383</p>
-            <p><span>E:</span> office@88point8.com</p>
-            <img src="img/logo.png" class="footer-logo" alt="">
+            <!-- <p><span>A:</span> Ripollé</p> -->
+            <p><span>T:</span> (+34) 657 588 715</p>
+            <p><span>E:</span> <a href="mailto:contact@deboneband.com">contact@deboneband.com</a></p>
+            <p>You can also contact with us through any social media 🤘</p>
+            <img src="img/logo/logo-contorno-blanco-sin-fondo.png" class="footer-logo" alt="">
           </div>
         </div>
       </div>
@@ -260,7 +210,7 @@
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
     </div>
   </footer>
-  <!-- Footer section end -->
+  <!-- Footer section end -->c
 
   <!--====== Javascripts & Jquery ======-->
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -270,6 +220,10 @@
   <script src="js/circle-progress.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/wavesurfer.min.js"></script>
-  <script src="js/header.js"></script>
+  <script type="text/javascript">
+    function openUrl(url) {
+      window.open(url, "_blank");
+    }
+  </script>
 </body>
 </html>
