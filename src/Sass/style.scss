@@ -2,7 +2,7 @@
 ------------------------------------
   88.0 - Radio Station Template
   Version: 1.0
- ------------------------------------ 
+ ------------------------------------
  ====================================*/
 
 
@@ -133,14 +133,14 @@ ol {
 .text-white {
   h1,h2,h3,h4,h5,h6,p,span,li,a{
     color: #fff;
-  } 
+  }
 }
 
 
 /*---------------------
   Commom elements
 -----------------------*/
-/* buttons */ 
+/* buttons */
 .site-btn {
   display: inline-block;
   border: none;
@@ -1088,12 +1088,12 @@ ol {
 /*------------------
   Dj's Page
 ---------------------*/
-.dj-intro {
+.music-intro {
   p{
     font-size: 18px;
   }
 }
-.dj-team {
+.music-team {
   overflow: hidden;
   padding-top: 100px;
 }
@@ -1101,7 +1101,7 @@ ol {
   width: 20%;
   float: left;
 }
-.dj-single {
+.music-single {
   position: relative;
   border-bottom: 4px solid $color;
   &:after {
@@ -1120,13 +1120,13 @@ ol {
     &:after{
       opacity: 0;
     }
-    .dj-info-warp {
+    .music-info-warp {
       background: $color;
       h4,p{
         color: #151515;
       }
     }
-    .dj-social-links {
+    .music-social-links {
       visibility: visible;
       position: relative;
       a {
@@ -1149,7 +1149,7 @@ ol {
   }
 }
 
-.dj-info-warp {
+.music-info-warp {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1172,11 +1172,11 @@ ol {
   }
 }
 
-.dj-info {
+.music-info {
   float: left;
 }
 
-.dj-social-links {
+.music-social-links {
   float: right;
   padding-top: 8px;
   visibility: hidden;
@@ -1322,8 +1322,8 @@ ol {
       bottom: 22px;
       display: inline-block;
       background: $color;
-      font-size: 18px;  
-      font-weight: 700; 
+      font-size: 18px;
+      font-weight: 700;
       padding: 0 5px;
     }
   }
@@ -1550,7 +1550,7 @@ ol {
 }
 
 @media (max-width: 1630px) {
-  .dj-single:hover .dj-social-links {
+  .music-single:hover .music-social-links {
     float: none;
     clear: both;
   }
@@ -1560,7 +1560,7 @@ ol {
 
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .header-social-links a 
+  .header-social-links a
   {
     margin-left: 5px;
   }
@@ -1715,11 +1715,11 @@ ol {
   .col-1-5 {
     width: 50%;
   }
-  .dj-single:hover .dj-social-links {
+  .music-single:hover .music-social-links {
     float: right;
     clear: inherit;
   }
-  .dj-social-links a{
+  .music-social-links a{
     width: 35px;
     height: 35px;
     margin-left: 5px;
@@ -1733,7 +1733,7 @@ ol {
 
 /* Medium Mobile :480px. */
 @media only screen and (max-width: 576px){
-  .dj-single:hover .dj-social-links {
+  .music-single:hover .music-social-links {
     float: none;
     clear: both;
   }
@@ -1765,7 +1765,7 @@ ol {
   .col-1-5 {
     width: 100%;
   }
-  .dj-single:hover .dj-social-links {
+  .music-single:hover .music-social-links {
     float: right;
     clear: inherit;
   }

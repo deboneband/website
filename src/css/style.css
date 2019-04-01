@@ -2,7 +2,7 @@
 ------------------------------------
   88.0 - Radio Station Template
   Version: 1.0
- ------------------------------------ 
+ ------------------------------------
  ====================================*/
 
 /*----------------------------------------*/
@@ -1138,14 +1138,24 @@ ol {
 }
 
 /*------------------
-  Dj's Page
+  Music's Page
 ---------------------*/
 
-.dj-intro p {
+.music-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.music-element {
+	margin: 10px
+}
+
+.music-intro p {
 	font-size: 18px;
 }
 
-.dj-team {
+.music-team {
 	overflow: hidden;
 	padding-top: 100px;
 }
@@ -1155,12 +1165,12 @@ ol {
 	float: left;
 }
 
-.dj-single {
+.music-single {
 	position: relative;
 	border-bottom: 4px solid #ffe400;
 }
 
-.dj-single:after {
+.music-single:after {
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -1173,45 +1183,45 @@ ol {
 	transition: all 0.4s ease 0s;
 }
 
-.dj-single:hover:after {
+.music-single:hover:after {
 	opacity: 0;
 }
 
-.dj-single:hover .dj-info-warp {
+.music-single:hover .music-info-warp {
 	background: #ffe400;
 }
 
-.dj-single:hover .dj-info-warp h4,
-.dj-single:hover .dj-info-warp p {
+.music-single:hover .music-info-warp h4,
+.music-single:hover .music-info-warp p {
 	color: #151515;
 }
 
-.dj-single:hover .dj-social-links {
+.music-single:hover .music-social-links {
 	visibility: visible;
 	position: relative;
 }
 
-.dj-single:hover .dj-social-links a {
+.music-single:hover .music-social-links a {
 	left: 0;
 	opacity: 1;
 }
 
-.dj-single:hover .dj-social-links a:nth-child(1) {
+.music-single:hover .music-social-links a:nth-child(1) {
 	-webkit-transition: all 0.3s ease 0.3s;
 	transition: all 0.3s ease 0.3s;
 }
 
-.dj-single:hover .dj-social-links a:nth-child(2) {
+.music-single:hover .music-social-links a:nth-child(2) {
 	-webkit-transition: all 0.3s ease 0.2s;
 	transition: all 0.3s ease 0.2s;
 }
 
-.dj-single:hover .dj-social-links a:nth-child(3) {
+.music-single:hover .music-social-links a:nth-child(3) {
 	-webkit-transition: all 0.3s ease 0.1s;
 	transition: all 0.3s ease 0.1s;
 }
 
-.dj-info-warp {
+.music-info-warp {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -1224,30 +1234,30 @@ ol {
 	transition: all 0.4s;
 }
 
-.dj-info-warp h4 {
+.music-info-warp h4 {
 	font-weight: 700;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-.dj-info-warp p {
+.music-info-warp p {
 	margin-bottom: 0;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-.dj-info {
+.music-info {
 	float: left;
 }
 
-.dj-social-links {
+.music-social-links {
 	float: right;
 	padding-top: 8px;
 	visibility: hidden;
 	position: absolute;
 }
 
-.dj-social-links a {
+.music-social-links a {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
@@ -1270,7 +1280,7 @@ ol {
 	opacity: 0;
 }
 
-.dj-social-links a:first-child {
+.music-social-links a:first-child {
 	margin-left: 0;
 }
 
@@ -1639,7 +1649,7 @@ ol {
 }
 
 @media (max-width: 1630px) {
-	.dj-single:hover .dj-social-links {
+	.music-single:hover .music-social-links {
 		float: none;
 		clear: both;
 	}
@@ -1805,11 +1815,11 @@ ol {
 	.col-1-5 {
 		width: 50%;
 	}
-	.dj-single:hover .dj-social-links {
+	.music-single:hover .music-social-links {
 		float: right;
 		clear: inherit;
 	}
-	.dj-social-links a {
+	.music-social-links a {
 		width: 35px;
 		height: 35px;
 		margin-left: 5px;
@@ -1823,7 +1833,7 @@ ol {
 /* Medium Mobile :480px. */
 
 @media only screen and (max-width: 576px) {
-	.dj-single:hover .dj-social-links {
+	.music-single:hover .music-social-links {
 		float: none;
 		clear: both;
 	}
@@ -1851,7 +1861,7 @@ ol {
 	.col-1-5 {
 		width: 100%;
 	}
-	.dj-single:hover .dj-social-links {
+	.music-single:hover .music-social-links {
 		float: right;
 		clear: inherit;
 	}
