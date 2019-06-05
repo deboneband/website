@@ -506,6 +506,11 @@ ol {
 	background: #ffe400;
 }
 
+.center-content {
+	align-items: center;
+	justify-content: center;
+}
+
 .header-social-links {
 	float: right;
 	display: -webkit-box;
@@ -584,6 +589,14 @@ ol {
 
 .hero-slider .owl-nav .owl-next {
 	float: right;
+}
+
+.hero-slider:hover .owl-nav:hover .owl-next:hover {
+	background: #000
+}
+
+.hero-slider:hover .owl-nav:hover .owl-prev:hover {
+	background: #000
 }
 
 .hero-slider .owl-dots {
@@ -802,8 +815,8 @@ ol {
 
 .footer-top-section {
 	background: #212121;
-	padding-top: 100px;
-	padding-bottom: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .ft-widget ul {
@@ -844,7 +857,7 @@ ol {
 
 .ft-title {
 	border-bottom: 1px solid #fff;
-	margin-bottom: 55px;
+	margin-bottom: 20px;
 }
 
 .ft-title h4 {
@@ -900,6 +913,8 @@ ol {
 }
 
 .ft-contact-widget p span {
+	font-size: 12px;
+	font-weight: 500;
 	color: #ffe400;
 }
 
@@ -908,10 +923,14 @@ ol {
 	padding-top: 50px;
 }
 
+.ft-contact-widget a {
+	color: #ffe400;
+}
+
 .footer-section {
 	background: #1a1a1a;
 	text-align: center;
-	padding: 34px 0;
+	padding: 10px 0;
 }
 
 .footer-section p {
