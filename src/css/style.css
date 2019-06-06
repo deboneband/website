@@ -1645,6 +1645,13 @@ ol {
 	font-style: italic;
 }
 
+.not-found-container {
+	margin: 30px;
+	display: flex;
+	align-content: center;
+	justify-content: center
+}
+
 /*------------------
   Responsive
 ---------------------*/
