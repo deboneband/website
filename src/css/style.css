@@ -1124,58 +1124,74 @@ ol {
 .chart-section {
 	padding-top: 70px;
 	padding-bottom: 100px;
-}
-
-.chart-section .section-title {
-	margin-bottom: 30px;
+	padding-right: 70px;
+	padding-left: 70px;
 }
 
 .chart-table {
 	width: 100%;
-}
-
-.chart-table tr {
-	border-bottom: 1px solid #303030;
+	margin-bottom: 100px;
 }
 
 .chart-table tr td {
+	border-bottom: 1px solid #303030;
 	padding-bottom: 20px;
 	padding-top: 20px;
+	width: 30%;
+	vertical-align: middle;
 }
 
 .chart-table tr td:nth-child(1) {
-	font-size: 36px;
-	font-weight: 700;
-	color: #fff;
-	width: 78px;
-	text-align: center;
-	vertical-align: middle;
+	color: #aaa;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 14px;
 }
 
 .chart-table tr td:nth-child(2) {
-	padding-left: 25px;
-	width: 94px;
+	color: #fff;
+	text-align: center;
+	font-size: 26px;
 }
 
 .chart-table tr td:nth-child(3) {
-	padding-left: 50px;
+	color: #ffe400;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 14px;
 }
 
-.chart-table tr td:nth-child(3) h4 {
-	margin-bottom: 3px;
+.chart-table-past {
+	width: 100%;
+	margin-bottom: 100px;
 }
 
-.chart-table tr td:nth-child(3) p {
-	margin-bottom: 0;
-}
-
-.chart-table tr td:nth-child(4) {
-	width: 36px;
-}
-
-.chart-table tr td:nth-child(4) img {
-	max-width: 36px;
+.chart-table-past tr td {
+	border-bottom: 1px solid #303030;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	width: 30%;
 	vertical-align: middle;
+}
+
+.chart-table-past tr td:nth-child(1) {
+	color: #777;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+.chart-table-past tr td:nth-child(2) {
+	color: #aaa;
+	text-align: center;
+	font-size: 26px;
+}
+
+.chart-table-past tr td:nth-child(3) {
+	color: #aaa000;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 14px;
 }
 
 /*------------------
@@ -1892,19 +1908,6 @@ ol {
 @media only screen and (max-width: 479px) {
 	.chart-table {
 		width: 100%;
-	}
-	.chart-table tr td:nth-child(1) {
-		font-size: 28px;
-		width: 44px;
-	}
-	.chart-table tr td:nth-child(2) {
-		padding-left: 10px;
-	}
-	.chart-table tr td:nth-child(3) {
-		padding-left: 10px;
-	}
-	.chart-table tr td:nth-child(3) h4 {
-		font-size: 20px;
 	}
 	.col-1-5 {
 		width: 100%;
